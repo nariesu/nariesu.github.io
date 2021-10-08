@@ -1,1 +1,1 @@
-this is just for my dumb server. idk what i'm doing.
+https://nariesu.github.io
