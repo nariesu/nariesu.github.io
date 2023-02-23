@@ -1,1 +1,2 @@
-https://nariesu.github.io
+https://nariesu.github.io/dddswb
+for word bank
