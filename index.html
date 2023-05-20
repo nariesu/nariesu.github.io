@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<head>
+    <!-- Golden Buns Bakery & Cafe MOCKUP
+        Started: 4/9/2023
+        Version 1.0.0.
+     -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Golden Buns | Mockup</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png"/>
+    <link rel="stylesheet" href="style.css"/>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="node.js"></script>
+    
+    <!-- Nunito Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito+Sans&family=Roboto&display=swap" rel="stylesheet">    
+
+</head>
+<body>
+    <section class="nav-section section golden ff-rn">
+        <div class="container nav-container">
+            
+            <div class="mobile-nav">
+                <div class="logo-group ai-center">
+                    <img src="assets/logo.png" class="logo-img" alt="Golden Buns Logo">
+                    <span class="logo-txt">Golden Buns</span>
+                </div>
+
+                <a href="javascript:void(0);" id="hamburger" onclick="hamburgerMenu()">
+                    <span></span>
+                </a>
+            </div>
+        
+            <div class="nav-menu links-list" id="hamburgerToggle">
+                <a href="#" class="link nav-link">Home</a>
+                <a href="#" class="link nav-link">Menu</a>
+                <a href="#" class="link nav-link">Ordering</a>
+                <a href="#" class="link nav-link">About</a>
+                <a href="#" class="link nav-link">Contact</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section vanilla">
+
+        <div class="container column">
+
+            <div class="menu-nav column ai-center gap1">
+                <h1>Menu</h1>
+                <div class="menu-toggle-list links-list jc-sb">
+                    <a class="menu-toggle link" href='#breads'>Breads</a>
+                    <a class="menu-toggle link" href='#cakes-and-pies'>Cakes & Pies</a>
+                    <a class="menu-toggle link" href='#cookies'>Cookies</a>
+                    <a class="menu-toggle link" href='#pastries'>Pastries</a>
+                    <a class="menu-toggle link" href='#sweetbreads'>Sweetbreads</a>
+                    <a class="menu-toggle link" href='#coffee'>Coffee</a>
+                </div>
+
+            </div>
+
+            <div id="breads" class="active-menu">
+                <h2>Breads</h2>
+
+                 <div class="menu-container">
+                    <div class="item-txt">
+                        <span class="item-name">Challah</span>
+                        <br><span class="item-desc">Jewish braided bread that is thick, fluffy, and slightly sweet.</span>
+                    </div>
+                    <div class="item-price">$7.00</div>
+
+                    <div class="item-txt">
+                        <span class="item-name">Ciabatta</span>
+                        <br><span class="item-desc">A rustic Italian bread with a crusty exterior and an airy, hole-filled interior.</span>
+                    </div>
+                    <div class="item-price">$6.00</div>
+
+                    <div class="item-txt">
+                        <span class="item-name">Rye</span>
+                        <br><span class="item-desc"></span>
+                    </div>
+                    <div class="item-price">$7.00</div>
+
+                    <div class="item-txt">
+                        <span class="item-name">Sourdough</span>
+                        <br><span class="item-desc"></span>
+                    </div>
+                    <div class="item-price">$7.50</div>
+
+                    <div class="item-txt">
+                        <span class="item-name">White</span>
+                        <br><span class="item-desc"></span>
+                    </div>
+                    <div class="item-price">$4.00</div>
+                 </div>
+
+            </div>
+            
+            <div id="cakes-and-pies" class="inactive-menu">
+                <h2>Cakes <span class="ampersand">&</span> Pies</h2>
+
+                <div class="menu-container">
+                    <div class="item-txt">
+                        <span class="item-name">Cheesecake</span>
+                        <br><span class="item-desc">Made with a graham cracker crust.</span>
+                    </div>
+                    <div class="item-price">$4.50 ea. / $35.00 whole</div>
+
+                    <div class="item-txt">
+                        <span class="item-name">Chocolate Bundt</span>
+                    </div>
+                    <div class="item-price">$4.00 ea. / $30.00 whole</div>
+
+                    <div class="item-txt">
+                        <span class="item-name">Coffee Cake</span>
+                        <br><span class="item-desc"></span>
+                    </div>
+                    <div class="item-price">$4.00 ea. / $30.00 whole</div>
+
+                    <div class="item-txt">
+                        <span class="item-name">French Silk</span>
+                        <br><span class="item-desc">A rich, creamy chocolate pie. Topped with whipped cream.</span>
+                    </div>
+                    <div class="item-price">$3.50 ea. / $25.00 whole</div>
+
+                    <div class="item-txt">
+                        <span class="item-name">Key Lime Pie</span>
+                        <br><span class="item-desc">Made with a graham cracker crust.</span>
+                    </div>
+                    <div class="item-price">$4.00 ea. / $25.00 whole</div>
+
+                    <div class="item-txt">
+                        <span class="item-name">Tres Leches</span>
+                        <br><span class="item-desc">A sponge cake topped with whipped cream. Garnished with strawberries.</span>
+                    </div>
+                    <div class="item-price">$4.00 ea. / $25.00 whole</div>
+                 </div>
+            </div>
+
+            <div id="cookies" class="inactive-menu">
+                <h2>Cookies</h2>
+
+                <div class="menu-container">
+                    <div class="item-txt">
+                        <span class="item-name">Chocolate Chip</span>
+                    </div>
+                    <div class="item-price">$2.00</div>
+
+                    <div class="item-txt">
+                        <span class="item-name">Decorated Sugar</span>
+                        <br><span class="item-desc">Sugar cookies with decorates with designs that reflect the current season.</span>
+                    </div>
+                    <div class="item-price">$2.00</div>
+
+                    <div class="item-txt">
+                        <span class="item-name">Macaron</span>
+                        <br><span class="item-desc">A delicate layered cookie made with a creamy filling. Comes in various flavors.</span>
+                    </div>
+
+                    <div class="item-txt">
+                        <span class="item-name">Peanut Butter</span>
+                    </div>
+                    <div class="item-price">$2.00</div>
+        
+                    <div class="item-txt">
+                        <span class="item-name">Shortbread</span>
+                    </div>
+                    <div class="item-price">$2.00</div>
+                </div>
+            </div>
+
+            <div id="pastries" class="inactive-menu">
+                <h2>Pastries</h2>
+
+                <div class="menu-container">
+                    <div class="item-txt">
+                        <span class="item-name">Croissant</span>
+                        <br><span class="item-desc">Contains a variety of flavorful fillings or none at all (butter).</span>
+                    </div>
+                    <div class="item-price">$2.00</div>
+
+                    <div class="item-txt">
+                        <span class="item-name">Cinnamon Bun</span>
+                    </div>
+                    <div class="item-price">$3.00</div>
+
+                    <div class="item-txt">
+                        <span class="item-name">Hot Cross Bun</span>
+                        <br><span class="item-desc">A sweet, spiced bun made with raisins.</span>
+                    </div>
+                    <div class="item-price">$2.00</div>
+
+                    <div class="item-txt">
+                        <span class="item-name">Sticky Bun</span>
+                        <br><span class="item-desc">Made with caramel sauce and topped with pecans.</span>
+                    </div>
+                    <div class="item-price">$2.00</div>
+                </div>
+            </div>
+
+            <div id="sweetbreads" class="inactive-menu">
+                <h2>Sweetbreads</h2>
+
+                <div class="menu-container">
+                    <div class="item-txt">
+                        <span class="item-name">Apple Cinnamon Swirl</span>
+                    </div>
+                    <div class="item-price">$8.00</div>
+
+                    <div class="item-txt">
+                        <span class="item-name">Babka</span>
+                        <br><span class="item-desc">A sweet braided-bread filled with chocolate or cinnamon.</span>
+                    </div>
+                    <div class="item-price">$12.00</div>
+
+                    <div class="item-txt">
+                        <span class="item-name">Lemon Poppyseed</span>
+                    </div>
+                    <div class="item-price">$7.00</div>
+                </div>
+            </div>
+
+            <div id="coffee" class="inactive-menu">
+                <h2>Coffee</h2>
+
+                <div class="menu-container">
+                    content
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section espresso">
+        <div class="container column ai-center footer">
+
+            <img src="assets/logo.svg" class="logo-footer" alt="Golden Buns logo">
+
+            <span class="logo-txt">Golden Buns</span>    
+            <p>Bakery & Cafe</p>
+
+        </div>
+    </section>
+
+</body>
+</html>
