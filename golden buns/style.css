@@ -9,12 +9,12 @@ body { overflow: visible; }
 
 @font-face {
     font-family: 'Restora Black';
-    src: url(assets/Restora_Neue_Black.otf);
+    src: url(Restora_Neue_Black.otf);
 }
 
 @font-face {
     font-family: 'Restora Extra Bold';
-    src: url(assets/Restora_Neue_ExtraBold.otf);
+    src: url(Restora_Neue_ExtraBold.otf);
 }
 
 :root {
