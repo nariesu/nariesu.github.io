@@ -9,6 +9,13 @@ function hamburgerMenu() {
     }
   }
 
+// hamburger animation
+$(document).ready(function(){
+	$('#hamburger').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+
 // menu list  
 $(function() {
     $('.menu-toggle').on('click', function() {
