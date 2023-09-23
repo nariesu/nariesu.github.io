@@ -1,47 +1,125 @@
 <!DOCTYPE html>
 <head>
-      <meta charset="utf-8">
-      <title>Project Hub</title>
+    <!-- merevolus
+        07.12.2023
+     -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>merevelous</title>
+    
+    <link rel="icon" type="image/svg+xml" href="/assets/merevelous_favicon.svg">
+    <link rel="stylesheet" href="https://use.typekit.net/dlw4wga.css">
+    <link rel="stylesheet" href="style.css"/>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
-      <section>
-            <h1>Directory</h1>
-            <ul>
-                  <li> <a href="/projects/golden_buns/index.html">Golden Buns | Mockup Bakery</a> </li>
-            </ul>
-      </section>
-      
+        <section class="nav sec-dark">
+            <div class="container">
+                <div class="logo">
+                    <h1 class="logo-txt">Merevelous</h1>
+                    <img src="/assets/star.svg" class="star">
+                </div>
+
+                <div class="nav-links">
+                    <a href="/home">home</a>
+                    <a href="/work">work</a>
+                    <a href="/about">about</a>
+                    <a href="/contact">contact</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="container">
+                <div class="block"></div>
+                
+                <div class="intro-txt">
+                    <h1>let's enchant your online presence</h1>
+                    <p>Hello, I'm Meredith. I'm a web designer eager to embark on the journey in the world of web development.
+                    </p>
+
+                    <br><a class="intro-link" href="/work">Browse portfolio</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="container">
+                <span class="quote">&#8220;</span>
+                <div class="quote-txt">
+                    <h2>Nintendo, hire this man. she's epic.</h2>
+                    - June Sanchez
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="container">
+                <h1>Work</h1>
+
+                <div class="work-grid">
+                    <div class="work-preview">
+
+                        <div class="img-container">
+                            <img src="/assets/work/goldenbuns.png">
+                        </div>
+                        <div class="work-txt">
+                            <h3>Golden Buns</h3>
+                            <h4>Mockup</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="work-preview">
+
+                        <div class="img-container">
+                            <img src="/assets/work/kenblaisdell.jpg">
+                        </div>
+                        <div class="work-txt">
+                            <h3>Ken Blaisedell</h3>
+                            <h4>Client</h4>
+                        </div>
+
+                    </div>
+                    
+                    <div class="work-preview"></div>
+                    <div class="work-preview"></div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="footer sec-dark">
+            <div class="container">
+                <div class="logo">
+                    <h1 class="logo-txt">merevelous</h1>
+                    <img src="/assets/star.svg" class="star">
+                </div>
+
+                <div class="footer-links">
+                    <a href="filler" class="footer-btn" target="_blank" alt="behance">
+                        <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g>
+                            <path d="M143.353,356.876c6.823,0 13.318,-0.606 19.426,-1.975c6.205,-1.345 11.695,-3.502 16.348,-6.678c4.63,-3.053 8.483,-7.247 11.271,-12.555c2.799,-5.283 4.144,-12.142 4.144,-20.42c0,-16.227 -4.581,-27.764 -13.657,-34.756c-9.114,-6.908 -21.245,-10.337 -36.163,-10.337l-75.39,0l0,86.721l74.021,0Zm-3.842,-134.057c12.276,0 22.456,-2.909 30.515,-8.822c7.974,-5.83 11.828,-15.44 11.828,-28.649c0,-7.32 -1.272,-13.379 -3.854,-18.081c-2.678,-4.702 -6.229,-8.374 -10.688,-10.956c-4.436,-2.678 -9.453,-4.52 -15.258,-5.526c-5.72,-1.115 -11.694,-1.551 -17.839,-1.551l-64.883,0l0,73.585l70.179,0Zm8.968,-127.235c15.064,0 28.661,1.297 41.083,4c12.361,2.617 22.892,6.992 31.811,12.991c8.774,5.999 15.645,13.973 20.566,24.019c4.787,9.901 7.198,22.299 7.198,36.95c0,15.851 -3.587,29.097 -10.798,39.689c-7.247,10.568 -17.899,19.232 -32.114,25.97c19.353,5.575 33.726,15.379 43.239,29.328c9.562,14.045 14.252,30.842 14.252,50.547c0,15.972 -3.054,29.715 -9.174,41.288c-6.168,11.707 -14.567,21.196 -24.916,28.516c-10.434,7.38 -22.395,12.809 -35.823,16.336c-13.27,3.514 -27.049,5.296 -41.179,5.296l-152.624,0l0,-314.93l148.479,0Z" 
+                            style="fill-rule:nonzero;"/>
+                            <path d="M434.517,236.016c-7.453,-8.228 -20.044,-12.688 -35.423,-12.688c-10.01,0 -18.287,1.684 -24.928,5.114c-6.496,3.393 -11.804,7.598 -15.863,12.567c-4.048,5.042 -6.787,10.374 -8.399,16.07c-1.599,5.55 -2.569,10.579 -2.848,15.027l101.895,0c-1.491,-15.973 -6.956,-27.788 -14.434,-36.09Zm-71.973,119.818c9.392,9.162 22.953,13.767 40.525,13.767c12.628,0 23.535,-3.187 32.697,-9.562c9.076,-6.362 14.603,-13.161 16.735,-20.214l55.165,0c-8.871,27.449 -22.311,47.045 -40.671,58.849c-18.141,11.84 -40.246,17.742 -66.022,17.742c-17.96,0 -34.127,-2.909 -48.645,-8.629c-14.506,-5.805 -26.625,-13.924 -36.829,-24.528c-9.937,-10.641 -17.657,-23.22 -23.159,-37.992c-5.441,-14.7 -8.18,-30.976 -8.18,-48.609c0,-17.051 2.848,-32.975 8.423,-47.699c5.671,-14.773 13.549,-27.522 23.886,-38.21c10.361,-10.75 22.638,-19.233 36.938,-25.438c14.312,-6.168 30.09,-9.27 47.566,-9.27c19.293,0 36.174,3.708 50.668,11.27c14.421,7.465 26.261,17.572 35.556,30.224c9.283,12.628 15.912,27.073 20.045,43.276c4.096,16.179 5.538,33.072 4.362,50.765l-164.548,0c0,18.033 6.084,35.096 15.488,44.258Z" 
+                            style="fill-rule:nonzero;"/><rect height="31.072" width="127.659" x="334.235" y="116.72"/></g>
+                        </svg>
+                    </a>
+
+                    <a href="https://linkedin.com/in/merevelous" class="footer-btn" target="_blank" alt="linkedin">
+                        <?xml version="1.0" ?><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g><path d="M0 0h24v24H0z" fill="none"/><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z" fill-rule="nonzero"/></g></svg>
+                    </a>
+            </div>
+        </section>
+
+
 </body>
 </html>
-
-<style>
-      * {
-            font-size: 1rem;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-      }
-
-      body, section { 
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-      }
-
-      
-      body {
-            background-color: #00250e;
-            color: white;
-            font-family: helvetica, sans serif;
-            padding: 1rem;
-
-            align-items: center;
-      }
-
-      section { max-width: 700px; }
-
-      h1 { font-size: 1.25rem; }
-      a { color: #85c300; text-decoration: none; }
-
-</style>
