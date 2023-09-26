@@ -13,6 +13,8 @@
     src: url("/assets/fonts/Cocktail.ttf") format("truetype");
   }
 
+html, body { overflow-x: hidden; }
+
 :root {
     --malachite: #00250e; /* original: #002f12 */
     --meadow: #447507;
@@ -36,9 +38,9 @@ h1, h2, h3 {
     text-transform: lowercase;
 }
 
-a { 
+a, label, button { 
     font-family: "roboto slab", serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.03rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -48,15 +50,17 @@ a {
 
 /* logo */
 .logo { display: flex; }
-.logo img { width: 8px; align-self: flex-start; }
+.star { width: 8px; }
 .logo-txt { font-family: "cocktail", serif; font-size: 2rem; font-feature-settings: "aalt" 1; }
 .logo .nav { color: var(--moss); }
 
-.star {
+.logo-star {
     animation: ease-in-out;
     animation-duration: 1.75s;
     animation-name: starburst;
     animation-iteration-count: 1;
+    margin-top: 5px;
+    align-self: flex-start; 
 }
 
 @keyframes starburst {
@@ -93,7 +97,7 @@ section {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
 }
 
 section h1 { color: var(--moss); }
@@ -101,6 +105,7 @@ section a { color: var(--marigold); }
 section a:hover { color: var(--melon); }
 
 .nav, .footer { padding: 1rem; }
+.nav { padding-bottom: 0; }
 
 .container {
     width: 100%;
@@ -129,30 +134,26 @@ section a:hover { color: var(--melon); }
 .intro .container {
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: flex-start;
     row-gap: 2rem;
     column-gap: 4rem;
+}
 
+.intro .container { 
     border: 1px solid var(--marsh);
+    align-items: center;
     padding: 3rem;
 }
 
-.intro img { width: 300px; }
-.intro-txt { 
+.txt-group { 
     display: flex;
     flex-flow: column nowrap;
-    align-items: flex-start;
-    row-gap: 1rem;
-    width: 75%;
-    height: 100%;
+    row-gap: 0.5rem;
+    width: 100%;
 }
-
-.intro-link { justify-self: flex-end; flex: 1; }
-.intro-link::after { content: "→"; padding-left: 0.5rem; }
 
 .testimonial .container {
     padding: 0 3rem;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: flex-start; 
     align-items: flex-start; 
     column-gap: 1rem;
@@ -172,15 +173,24 @@ section a:hover { color: var(--melon); }
 
 .work .container { padding: 0rem 3rem; }
 
+.contact .container { padding: 0 3rem; }
+.contact .txt-group { align-items: center; }
+
+/* intro */
+.intro img { width: 300px; }
+.intro .idk { width: 66.6%; row-gap: 3rem; }
+.intro .txt-group { height: 100%; }
+.intro-link { flex: 1; }
+.intro-link::after, form button::after { content: "→"; padding-left: 0.5rem; }
+
 /* work */
 .work-grid {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    column-gap: 0;
-    row-gap: 4rem;
+    gap: 5rem;
 
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -201,20 +211,73 @@ section a:hover { color: var(--melon); }
 .work-preview img {
     display: block;
     width: 100%;
-    filter: grayscale(100%) sepia(50%) saturate(150%) hue-rotate(35deg);
+    filter: grayscale(100%) sepia(50%) saturate(150%) hue-rotate(10deg);
     cursor: pointer;
 }
 
 .work-preview img:hover { transition: 0.4s ease-out; filter: none; }
 .work-preview, .work-preview { border: 1px solid var(--marsh); }
-.work h1 { margin-bottom: 1rem; }
+
+.tag-list { 
+    display: flex;
+    margin-top: 0.5rem; 
+    flex-flow: row wrap; 
+    column-gap: 1rem; 
+}
+
+.tags { 
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: bold; 
+    background-color: var(--minty); 
+    color: var(--malachite); 
+}
+
+/* form */
+form {
+    min-width: 100%; 
+
+    display: flex;
+    flex-flow: column nowrap; 
+    justify-content: center;
+    row-gap: 1.5rem; 
+}
+.form-group { display: flex; gap: 1.5rem; }
+label { font-weight: bold; width: 100%; }
+
+input, textarea { 
+    width: 100%; 
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+
+    background-color: var(--malachite);
+    color: var(--minty);
+    border: 1px solid var(--marsh);
+}
+
+input:focus, textarea:focus { border-color: var(--marigold); outline: none; transition: 0.4s ease-in-out; }
+
+form button { 
+    background-color: var(--malachite); 
+    color: var(--marigold);
+    border: none;
+
+    font-size: 0.9rem;
+    font-weight: bold;
+    
+    width: 5rem;
+    cursor: pointer;
+}
+
+form button:hover { color: var(--melon); }
+form .star { padding-bottom: 8px; width: 0.33rem; }
 
 /* footer */
 .footer .container { row-gap: 0.5rem; }
 .footer-links {
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
     gap: 1rem;
 }
 
@@ -236,30 +299,35 @@ section a:hover { color: var(--melon); }
 .block { 
     /* temp item */
     display: block;
-    width: 400px;
-    height: 300px;
+    width: 350px;
+    height: 250px;
 }
 
 /* responsive */
 @media (max-width: 820px) {
     * { font-size: 1rem; }
-    section { padding: 1rem 1.25rem; }
+    section { padding: 1.5rem 1.25rem; }
 
-    a { font-size: 0.8rem; }
+    a, label, button, .tags { font-size: 0.8rem; }
     h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
     .nav-links a { font-size: 0.75rem; }
     .logo-txt { font-size: 1.75rem; }
 
     .nav .container { flex-flow: column wrap; align-items: flex-start;}
     .nav-links { column-gap: 2rem; }
 
-    .intro .container { padding: 1.5rem; flex-flow: column nowrap; gap: 1rem; }
-    .intro-txt { width: auto; }
+    .intro .container, .contact .container { padding: 1.5rem; flex-flow: column nowrap; gap: 1rem; }
+    .intro .txt-group { width: auto; }
     .intro img { width: 200px; align-self: center; }
 
-    .testimonial .container { flex-flow: row nowrap; padding: 1rem; }
+    .testimonial .container { flex-flow: row nowrap; padding: 0; }
+    .quote { font-size: 3rem; }
 
     .work .container { padding: 0; }
-    .work-grid { flex-flow: column nowrap; gap: 3rem; }
+    .work-grid { flex-flow: column nowrap; gap: 1.5rem; }
     .work-preview { width: 100%; max-width: 450px; }
+
+    .form-group { flex-flow: column nowrap; }
   }
