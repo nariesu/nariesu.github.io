@@ -24,12 +24,12 @@
             <div class="container">
                 <div class="logo">
                     <h1 class="logo-txt">Merevelous</h1>
-                    <img src="/assets/star.svg" class="star">
+                    <img src="/assets/star.svg" class="star logo-star">
                 </div>
 
                 <div class="nav-links">
                     <a href="/home">home</a>
-                    <a href="/work">work</a>
+                    <a href="#work">work</a>
                     <a href="/about">about</a>
                     <a href="/contact">contact</a>
                 </div>
@@ -38,15 +38,20 @@
 
         <section class="intro">
             <div class="container">
+
                 <div class="block"></div>
                 
-                <div class="intro-txt">
-                    <h1>let's enchant your online presence</h1>
-                    <p>Hello, I'm Meredith. I'm a web designer eager to embark on the journey in the world of web development.
-                    </p>
+                <div class="idk txt-group">
+                    <div class="txt-group">
+                        <h1>Insert Something Cool</h1>
+                        <p>Hello, I'm Meredith. I'm a web designer based in Gilbert, Arizona. Here's
+                            some more text so it looks better.
+                        </p>
+                    </div>
 
-                    <br><a class="intro-link" href="/work">Browse portfolio</a>
+                    <a class="intro-link" href="#work">Browse portfolio</a>
                 </div>
+
             </div>
         </section>
 
@@ -60,7 +65,7 @@
             </div>
         </section>
 
-        <section class="work">
+        <section class="work" id="work">
             <div class="container">
                 <h1>Work</h1>
 
@@ -68,11 +73,16 @@
                     <div class="work-preview">
 
                         <div class="img-container">
-                            <img src="/assets/work/goldenbuns.png">
+                            <a href="/work/goldenbuns.html"><img src="/assets/work/goldenbuns.png"></a>
                         </div>
+
                         <div class="work-txt">
-                            <h3>Golden Buns</h3>
-                            <h4>Mockup</h4>
+                            <a href="/work/goldenbuns.html"><h3>Golden Buns</h3></a>
+                            
+                            <div class="tag-list">
+                                <span class="tags">Mockup</span>
+                                <span class="tags">Sample</span>
+                            </div>
                         </div>
 
                     </div>
@@ -80,11 +90,16 @@
                     <div class="work-preview">
 
                         <div class="img-container">
-                            <img src="/assets/work/kenblaisdell.jpg">
+                            <a href="/work/kenblaisdell.html"><img src="/assets/work/kenblaisdell.jpg"></a>
                         </div>
+
                         <div class="work-txt">
-                            <h3>Ken Blaisedell</h3>
-                            <h4>Client</h4>
+                            <a href="/work/kenblaisdell.html"><h3>Ken Blaisedell</h3></a>
+
+                            <div class="tag-list">
+                                <span class="tags">Client</span>
+                                <span class="tags">Sample</span>
+                            </div>
                         </div>
 
                     </div>
@@ -96,12 +111,38 @@
             </div>
         </section>
 
+        <section class="contact">
+            <div class="container">
+                <div class="txt-group">
+                    <h1>Contact</h1>
+                    <p>Fill out the form below to get in touch with me.</p>
+                </div>
+
+                <form action="https://formspree.io/f/meqbrbjg" method="POST">
+                    <div class="form-group">
+                        <label>Name <img src="/assets/star.svg" class="star" alt="required"><br>
+                            <input type="name" name="name" maxlength="200" required="">
+                        </label>
+
+                        <label>Email <img src="/assets/star.svg" class="star" alt="required"><br>
+                            <input type="email" name="email" maxlength="300" required="">
+                        </label>
+                    </div>
+
+                    <label>How Can I Help You? <img src="/assets/star.svg" class="star" alt="required"><br>
+                        <textarea name="message" rows="5" name="message" maxlength="3000"></textarea>
+                    </label>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
 
         <section class="footer sec-dark">
             <div class="container">
                 <div class="logo">
                     <h1 class="logo-txt">merevelous</h1>
-                    <img src="/assets/star.svg" class="star">
+                    <img src="/assets/star.svg" class="star logo-star">
                 </div>
 
                 <div class="footer-links">
