@@ -135,7 +135,7 @@ section a:hover { color: var(--melon); }
     flex-flow: row nowrap;
     justify-content: space-between;
     row-gap: 2rem;
-    column-gap: 4rem;
+    column-gap: 3rem;
 }
 
 .intro .container { 
@@ -173,8 +173,14 @@ section a:hover { color: var(--melon); }
 
 .work .container { padding: 0rem 3rem; }
 
-.contact .container { padding: 0 3rem; }
-.contact .txt-group { align-items: center; }
+.contact .container { 
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    padding: 0 3rem;
+    column-gap: 3rem;
+}
+
+.contact .txt-group { align-items: flex-start; width: 43%; }
 
 /* intro */
 .intro img { width: 300px; }
@@ -234,10 +240,23 @@ section a:hover { color: var(--melon); }
     color: var(--malachite); 
 }
 
+/* contact */
+.contact-list {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 0.5rem;
+}
+
+.contact-item { 
+    display: flex; 
+    flex-flow: row nowrap; 
+    column-gap: 0.75rem;
+    align-items: center;
+}
+
 /* form */
 form {
-    min-width: 100%; 
-
+    width: 57%; 
     display: flex;
     flex-flow: column nowrap; 
     justify-content: center;
@@ -275,25 +294,8 @@ form .star { padding-bottom: 8px; width: 0.33rem; }
 
 /* footer */
 .footer .container { row-gap: 0.5rem; }
-.footer-links {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 1rem;
-}
-
-.footer p { font-size: 0.8rem;}
-.footer a { border: none; }
-
-.footer-btn { 
-    background-color: var(--marigold); 
-    display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-
-    padding: 0.25rem;
-    border-radius: 100%; 
-}
-.footer-btn:hover { background-color: var(--melon); }
+.footer p { font-size: 0.9rem; }
+.footer i { color: var(--melon); padding: 0 0.25rem; }
 
 /* misc */
 .block { 
@@ -318,7 +320,7 @@ form .star { padding-bottom: 8px; width: 0.33rem; }
     .nav .container { flex-flow: column wrap; align-items: flex-start;}
     .nav-links { column-gap: 2rem; }
 
-    .intro .container, .contact .container { padding: 1.5rem; flex-flow: column nowrap; gap: 1rem; }
+    .intro .container { padding: 1.5rem; flex-flow: column nowrap; gap: 1rem; }
     .intro .txt-group { width: auto; }
     .intro img { width: 200px; align-self: center; }
 
@@ -329,5 +331,8 @@ form .star { padding-bottom: 8px; width: 0.33rem; }
     .work-grid { flex-flow: column nowrap; gap: 1.5rem; }
     .work-preview { width: 100%; max-width: 450px; }
 
-    .form-group { flex-flow: column nowrap; }
+    .contact .container { flex-flow: column nowrap; padding: 0 0.125rem; gap: 1rem; }
+    .contact .txt-group, form { width: 100%; }
+    form { gap: 1rem; }
+    .form-group { flex-flow: column nowrap; gap: 1rem; }
   }
