@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<head>
+    <!-- Golden Buns Bakery & Cafe MOCKUP
+        Started: 4/9/2023
+        Version 1.0.0.
+     -->
+
+    <!--
+        Image Credits
+        Breads: https://unsplash.com/photos/y60g_hGnKQM
+        Cakes & Pies: https://unsplash.com/photos/ChOr35YfmM0
+        Cookies: https://unsplash.com/photos/Sdek8sp0vGE
+        Pasteries: https://unsplash.com/photos/hQctjbWa8hc
+        Sweetbreads: https://unsplash.com/photos/yjWNJRwt8mc
+        Coffee: https://unsplash.com/photos/cK4K9aSG7CI
+    -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Golden Buns | Mockup</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.svg"/>
+    <link rel="stylesheet" href="style.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="node.js"></script>
+    
+    <!-- Nunito Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito+Sans&family=Roboto&display=swap" rel="stylesheet"> 
+    
+    <!-- Icon Kit -->
+    <script src="https://kit.fontawesome.com/231590ba15.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="nav golden">
+        <div class="container">
+            
+            <div class="mobile-nav">
+                <div class="logo-group">
+                    <img src="assets/logo_espresso.svg" class="logo-header" alt="Golden Buns Logo">
+                    <span class="logo-txt">Golden Buns</span>
+                </div>
+
+                <a href="javascript:void(0);" id="hamburger" onclick="hamburgerMenu()">
+                    <span class="top-bun"></span>
+                    <span class="patty"></span>
+                    <span class="bottom-bun"></span>
+                </a>
+            </div>
+        
+            <nav class="links-list" id="hamburgerToggle">
+                <a href="#" class="link nav-link" title="Example Link">Menu</a>
+                <a href="#" class="link nav-link" title="Example Link">Ordering</a>
+                <a href="#" class="link nav-link" title="Example Link">About</a>
+                <a href="#" class="link nav-link" title="Example Link">Contact</a>
+            </nav>
+
+        </div>
+    </section>
+
+    <section class="main vanilla">
+
+        <div class="container">
+
+            <div class="menu-nav">
+                <h1>Menu</h1>
+                <div class="menu-toggle-list links-list">
+                    <button class="menu-toggle link" href='#breads'>Breads</button>
+                    <button class="menu-toggle link" href='#cakes-and-pies'>Cakes & Pies</button>
+                    <button class="menu-toggle link" href='#cookies'>Cookies</button>
+                    <button class="menu-toggle link" href='#pastries'>Pastries</button>
+                    <button class="menu-toggle link" href='#sweetbreads'>Sweetbreads</button>
+                    <button class="menu-toggle link" href='#coffee'>Coffee</button>
+                </div>
+            </div>
+
+            <div id="breads" class="active-menu">
+
+                <img src="images/breads.jpg" alt="Challahs from Golden Buns">
+
+                <div class="menu-container">
+                <h2>Breads</h2>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Challah</span>
+                            <p class="item-desc">Jewish braided bread that is thick, fluffy, and slightly sweet.</p>
+                        </div>
+
+                        <span class="item-price">$7</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Ciabatta</span>
+                            <span class="item-desc">A rustic Italian bread with a crusty exterior and an airy, hole-filled interior.</span>
+                        </div>
+
+                        <span class="item-price">$6</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Rye</span>
+                            <span class="item-desc">A dense and flavorful bread made from rye flour</span>
+                        </div>
+
+                        <span class="item-price">$7</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Sourdough</span>
+                            <span class="item-desc">A tangy, chewy bread.</span>
+                        </div>
+
+                        <span class="item-price">$7</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">White</span>
+                            <span class="item-desc">A basic bread made from white flour.</span>
+                        </div>
+
+                        <span class="item-price">$4</span>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div id="cakes-and-pies" class="inactive-menu">
+
+                <img src="images/cakes.jpg" alt="Cococlate bundt cake from Golden Buns">
+
+                <div class="menu-container">
+
+                    <h2>Cakes <span class="ampersand">&</span> Pies</h2>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Cheesecake</span>
+                            <span class="item-desc">Made with a graham cracker crust.</span>
+                        </div>
+
+                        <span class="item-price">$4 <span class="price-div">/</span> $35</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Chocolate Bundt</span>
+                            <span class="item-desc">Chocolate cake baked in a bundt pan.</span>
+                        </div>
+
+                        <span class="item-price">$4 <span class="price-div">/</span> $30</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Coffee Cake</span>
+                            <span class="item-desc">A sweet, crrumbly cake that is great with coffee or tea.</span>
+                            
+                        </div>
+
+                        <span class="item-price">$4 <span class="price-div">/</span> $30</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">French Silk Pie</span>
+                            <span class="item-desc">A rich, creamy chocolate pie. Topped with whipped cream.</span>
+                        </div>
+
+                        <span class="item-price">$3 <span class="price-div">/</span> $25</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Key Lime Pie</span>
+                            <span class="item-desc">Made with a graham cracker crust.</span>
+                        </div>
+
+                        <span class="item-price">$4 <span class="price-div">/</span> $26</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Tres Leches</span>
+                            <span class="item-desc">A sponge cake topped with whipped cream. Garnished with strawberries.</span>
+                        </div>
+
+                        <span class="item-price">$4 <span class="price-div">/</span> $25</span>
+                    </div>
+                 </div>
+
+            </div>
+
+            <div id="cookies" class="inactive-menu">
+
+                <img src="images/cookies.jpg" alt="Macarons from Golden Buns">
+
+                <div class="menu-container">
+                    <h2>Cookies</h2>
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Chocolate Chip</span>
+                            <span class="item-desc">A classic cookie made with chocolate chips and a buttery dough.</span>
+                        </div>
+
+                        <span class="item-price">$2</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Decorated Sugar</span>
+                            <span class="item-desc">Sugar cookies with decorates with designs that reflect the current season.</span>
+                        </div>
+
+                        <span class="item-price">$2</span>
+                    </div>
+
+                    <div class="item-group">
+                        <div class="item">
+                            <div class="item-txt">
+                                <span class="item-name">Macaron</span>
+                                <span class="item-desc">A delicate layered cookie made with a creamy filling. Comes in various flavors.</span>
+                            </div>
+
+                            <span class="item-price"></span>
+                        </div>
+
+                        <div class="flvs">
+                            <ul class="flvs-list">
+                                <li>Chocolate</li>
+                                <li>Lemon</li>
+                                <li>Pistachio</li>
+                                <li>Raspberry</li>
+                                <li>Salted Caramel</li>
+                                <li>Vanilla</li>
+                            </ul>
+
+                            <ul class="flvs-price">
+                                <li>$2</li>
+                                <li>$2</li>
+                                <li>$3</li>
+                                <li>$3</li>
+                                <li>$3</li>
+                                <li>$2</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Shortbread</span>
+                            <span class="item-desc">A rich, buttery cookie with a crumbly texture.</span>
+                        </div>
+
+                        <span class="item-price">$2</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="pastries" class="inactive-menu">
+
+                <img src="images/pastries.jpg" alt="Cinnamon buns from Golden Buns">
+
+                <div class="menu-container">
+                    <h2>Pastries</h2>
+                    <div class="item-group">
+                        <div class="item">
+                            <div class="item-txt">
+                                <span class="item-name">Croissant</span>
+                                <span class="item-desc">Contains a variety of flavorful fillings.</span>
+                            </div>
+
+                            <span class="item-price"></span>
+                        </div>
+
+                        <div class="flvs">
+                            <ul class="flvs-list">
+                                <li>Butter</li>
+                                <li>Chocolate</li>
+                                <li>Cinnamon</li>
+                                <li>Nutella</li>
+                                <li>Vanilla Cream</li>
+                            </ul>
+
+                            <ul class="flvs-price">
+                                <li>$2</li>
+                                <li>$2</li>
+                                <li>$3</li>
+                                <li>$2</li>
+                                <li>$2</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Cinnamon Bun</span>
+                            <span class="item-desc">A sweet, sticky bun made with cinnamon and sugar.</span>
+                        </div>
+
+                        <span class="item-price">$3</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Hot Cross Bun</span>
+                            <span class="item-desc">A sweet, spiced bun made with raisins.</span>
+                        </div>
+
+                        <span class="item-price">$2</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Sticky Buns</span>
+                            <span class="item-desc">Made with caramel sauce and topped with pecans.</span>
+                        </div>
+
+                        <span class="item-price">$3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sweetbreads" class="inactive-menu">
+
+                <img src="images/sweetbreads.jpg" alt="Cinnamon apple swirl bread from Golden Buns">
+
+                <div class="menu-container">
+                    <h2>Sweetbreads</h2>
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Apple Cinnamon Swirl</span>
+                            <p class="item-desc">A sweet cinnamon bread with pieces of apples.</p>
+                        </div>
+
+                        <span class="item-price">87</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Babka</span>
+                            <span class="item-desc">A sweet braided-bread filled with chocolate.</span>
+                        </div>
+
+                        <span class="item-price">$12</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Lemon Poppyseed</span>
+                            <span class="item-desc">A slightly tangy but sweet bread with lemon juice and poppyseeds.</span>
+                        </div>
+
+                        <span class="item-price">$7</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="coffee" class="inactive-menu">
+                
+                <img src="images/coffee.jpg" alt="A latte from Golden Buns">
+
+                <div class="menu-container">
+                    <h2>Coffee</h2>
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name desc">Available hot or cold.</span>
+                            <p class="item-desc"></p>
+                        </div>
+
+                        <span class="item-price">8 oz. <span class="price-div">/</span> 12 oz. <span class="price-div">/</span> 16 oz.</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Espresso</span>
+                            <p class="item-desc">Concentrated coffee in a small shot.</p>
+                        </div>
+
+                        <span class="item-price">$2 <span class="price-div">/</span> $3.5 <span class="price-div">/</span> $4</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Americano</span>
+                            <span class="item-desc">With hot water.</span>
+                        </div>
+
+                        <span class="item-price"> $2 <span class="price-div">/</span> $3.5 <span class="price-div">/</span> $4</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Breve</span>
+                            <span class="item-desc">One part espresso, one part half-and-half.</span>
+                        </div>
+
+                        <span class="item-price">$3 <span class="price-div">/</span> $3.5 <span class="price-div">/</span> $4</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Cappuccino</span>
+                            <span class="item-desc">One part espresso, one part milk, and one part foam.</span>
+                        </div>
+
+                        <span class="item-price"> $3 <span class="price-div">/</span> $3.5 <span class="price-div">/</span> $4</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Latte</span>
+                            <span class="item-desc">Espresso and steamed milk with a touch of foam.</span>
+                        </div>
+
+                        <span class="item-price">$4 <span class="price-div">/</span> $4.5 <span class="price-div">/</span> $5</span>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-txt">
+                            <span class="item-name">Mocha</span>
+                            <span class="item-desc">Espresso, steamed milk, and chocolate.</span>
+                        </div>
+
+                        <span class="item-price">$4 <span class="price-div">/</span> $4.5 <span class="price-div">/</span> $5</span>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="footer espresso">
+        <div class="container">
+
+            <div>
+                <img src="assets/logo.svg" class="logo-footer" alt="Golden Buns logo"><br>
+
+                <span class="logo-txt">Golden Buns</span>    
+                <p>Bakery & Cafe</p>
+            </div>
+
+            <div class="socials">
+                <a href="#" class="socials-icon" title="Example Link"><i class="fa-brands fa-facebook-f "></i></a>
+                <a href="#" class="socials-icon" title="Example Link"><i class="fa-brands fa-instagram "></i></a>
+                <a href="#" class="socials-icon" title="Example Link"><i class="fa-brands fa-tiktok "></i></a>
+                <a href="#" class="socials-icon" title="Example Link"><i class="fa-brands fa-twitter "></i></a>
+
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
