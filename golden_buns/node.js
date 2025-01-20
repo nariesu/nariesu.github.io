@@ -17,18 +17,28 @@ $(document).ready(function(){
 });
 
 // menu list  
-$(function() {
-    $('.menu-toggle').on('click', function() {
+$(function () {
+  $('.menu-toggle').on('click', function (e) {
+    // prevent the default anchor click behavior (which causes scrolling)
+    e.preventDefault();
 
-      window.onbeforeunload = function () {
-        window.scrollTo(0, 0);
-      }
+    // scroll to the top when navigating away from the page
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
 
-         // switch the class on the previously active div to make it hidden
-         $('.active-menu').removeClass('active-menu').addClass('inactive-menu');
+    // switch the class on the previously active div to make it hidden
+    $('.active-menu').removeClass('active-menu').addClass('inactive-menu');
 
-         // switch the class on the new active div to show it
-         var selectorForActiveMenu = $(this).attr('href');
-         $(selectorForActiveMenu).removeClass('inactive-menu').addClass('active-menu');
-    });
+    // switch the class on the new active div to show it
+    var selectorForActiveMenu = $(this).attr('href');
+    $(selectorForActiveMenu).removeClass('inactive-menu').addClass('active-menu');
+
+    // reset background styles for all menu-toggle links
+    $('.menu-toggle').removeClass('active-link');
+
+    // apply the active link style to the clicked link
+    $(this).addClass('active-link');
+  });
 });
+
