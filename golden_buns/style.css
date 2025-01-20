@@ -39,7 +39,7 @@ h1 { font-family: 'Restora Black'; font-size: 2.5rem; letter-spacing: 0.125rem; 
 h2 {  font-family: 'Restora Extra Bold'; font-size: 2.125rem; letter-spacing: 0.05rem; }
 a, button { font-weight: bold; text-decoration: none; }
 
-.main h1, .main h2 { color: var(--chocolate) }
+main h1, main h2 { color: var(--chocolate) }
 .ampersand { font-family: 'Georgia', serif; }
 
 /* logo */
@@ -56,7 +56,7 @@ a, button { font-weight: bold; text-decoration: none; }
 .logo-footer { width: 50px; margin: 0; }
 
 /* sections */
-section {
+header, main, footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,8 +64,8 @@ section {
     padding: 3rem 4rem;
 }
 
-.nav { padding: 1rem 2rem; }
-.footer { padding: 2rem; }
+header { padding: 1rem 2rem; }
+footer { padding: 2rem; height: fit-content; margin: auto 0; }
 
 .vanilla { background-color: var(--vanilla); color: var(--espresso); }
 .strawberry { background-color: var(--strawberry); color: var(--espresso); }
@@ -81,14 +81,14 @@ section {
     gap: 2rem;
 }
 
-.nav .container {
+header .container {
     gap: 2rem;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
 
-.main .container {
+main .container {
     width: 100%; 
     max-width: 800px;
     border: 0.125rem solid var(--espresso);
@@ -99,7 +99,7 @@ section {
     row-gap: 0rem;
 }
 
-.footer .container {
+footer .container {
     display: flex;
     flex-flow: column nowrap; 
     align-items: center;
@@ -109,9 +109,9 @@ section {
 }
 
 /* nav */
-.nav a { color: var(--espresso) }
+header a { color: var(--espresso) }
 
-.nav .links-list { 
+header .links-list { 
     display: flex;
     width: 50%;
     flex: 0 1 66.7%;
@@ -163,10 +163,11 @@ section {
 
 .menu-toggle-list {
     background-color: var(--espresso);
-    padding: 0.5rem 1rem;
+
     width: 100%; 
     display: flex; 
-    justify-content: center; 
+    flex-flow: row nowrap;
+    justify-content: space-around; 
 }
 
 .menu-toggle:active { color: var(--golden); }
@@ -175,6 +176,7 @@ section {
     background: none;
     border: none;
     color: var(--vanilla);
+    padding: 0.5rem;
 
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.2rem;
@@ -183,7 +185,7 @@ section {
 }
 
 .menu-toggle:hover { color: var(--golden); transition: ease-in-out 0.5s; }
-
+.active-link { background-color: var(--golden) !important; color: var(--espresso) !important; }
 .nav-link { border: none; }
 
 /* menu layout */
@@ -314,7 +316,7 @@ section {
         cursor: pointer;
     }
 
-    .nav .container { flex-flow: column nowrap; }
+    header .container { flex-flow: column nowrap; }
 
     #hamburgerToggle {
         display: none;
@@ -334,10 +336,17 @@ section {
     }
 
     /* sections */
-    section, .nav { padding: 1rem 0.75rem; }
-    .nav { padding: 0.75rem; }
+    header, main { padding: 1rem 0.75rem; }
+    header { padding: 0.75rem; }
 
     .active-menu img { width: 100%; height: 135px; }
+
+    /* menu toggle */
+    .menu-toggle-list {
+        flex-flow: row wrap;
+        row-gap: 0;
+        justify-content: space-between;
+    }
 
     /* items */
     .item, .item-group { padding: 0.75rem 0; }
