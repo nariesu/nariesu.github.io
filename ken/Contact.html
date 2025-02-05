@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <!-- Ken Blaisdell 2023 
+    Started: 01/21/2023 -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Ken Blaisdell - Contact</title>
+    <link rel="icon" type="image/x-icon" href="images/kb_favicon.ico"/>
+
+    <link rel="stylesheet" href="kb_style.css"/>
+    
+    <!-- playfair display -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- open sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/231590ba15.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <div class="header-con">
+            <a href="Home.html" class="logo">Ken Blaisdell</a>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Books.html">Books</a></li>
+                    <li><a href="About.html">About</a></li>
+
+                    <input type="checkbox" id="drop-toggle" class="drop-toggle">
+                    <label for="drop-toggle" class="drop-toggle-label">Extras <i class="drop-arrow fa fa-caret-down"></i></label>
+                    <ul class="dropdown">
+                        <li><a href="Extras/Interviews.html">Interviews</a></li>
+                        <li><a href="Extras/Free Shipping.html">Free Shipping</a></li>
+                    </ul>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section class="aw">
+        <div class="container column">
+            <h1 class="section-title">Contact Me</h1>
+
+            <form action="https://formspree.io/f/mnqydrjy" method="POST">
+                <br><label>
+                    <h4>Name <span class="required" alt="required">*</span></h4> 
+                    <input type="name" name="name" maxlength="100" required>
+                </label>
+
+                <br><label>
+                    <h4>Email <span class="required" alt="required">*</span></h4>
+                    <input type="email" name="email" maxlength="300" required>
+                </label>
+
+                <br><label>
+                    <h4>Are you contacting me about <a link href="Extras/Free Shipping.html" class="link">free shipping?</a> <span class="required" alt="required">*</span></h4>
+                    
+                    <label for="Yes" class="radio">
+                        <input id="no-free-ship" type="radio" name ="free-ship" value="Yes" required>
+                        Yes
+                    </label>
+                        
+                    <label for="No" class="radio">
+                        <input id="yes-free-ship" type="radio" name ="free-ship" value="No">
+                        No
+                    </label>
+
+                <br><label>
+                    <h4>Message <span class="required" alt="required">*</span></h4>
+                    <textarea name="message" row="5" maxlength="3000" required></textarea>
+                </label><br>
+
+                <br><p>After you have submitted, you will be redirected to a reCAPTCHA page.</p>
+                
+                <br><button type="submit" class="button b-style">Submit</button>
+            </form>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container column footer-con">
+            <a href="kb_home.html" class="logo">Ken Blaisdell</a>
+            
+            <div class ="footer-links">
+                <a href="https://www.facebook.com/Author.Ken.Blaisdell/" target="_blank" rel="noopener noreferrer">
+                <i class="socials fa-brands fa-facebook-f"></i></a>
+                
+                <a href="Contact.html">
+                <i class="socials fa-sharp fa-solid fa-envelope"></i></a>
+            </div>
+
+            <p>Copyright &copy; 2007-<script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script>
+            <br>Web design by <a href="http://nariesu.com" target="_blank" rel="noopener noreferrer" class="link">Meredith Evans</a>
+            </p>
+            
+        </div>
+    </section>
+
+</body>
+</html>
+
+<script>
+    var mySubmit = document.getElementById("submit");
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(e) {
+    if (form.checkValidity()) {
+        document.getElementById("submit").value = "Loading";
+    }
+    e.preventDefault();
+    })
+</script>
