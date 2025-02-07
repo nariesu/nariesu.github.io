@@ -1,0 +1,225 @@
+/* 
+    css by meredith 
+    NOTE: there are instances where i believe this would've looked better with the display flex property, 
+    but i didn't use it in this assignment since we haven't covered that yet. espeically since this would've likely
+    required me to add div elements to the html to function as containers and i figured you wouldn't want that
+*/
+
+/* imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* html5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* root variables */
+:root {
+    --teal: #4CA7C0;
+    --purple: #484FB7;
+    --lavender: #6B8FE7;
+    --yellow: #E9BB57;
+    --pink: #D9526F;
+    --dark-gray: #1E1E1E;
+    --white: #ffffff;
+}
+
+/* global styles (mobile/small) */
+    body { background-color: var(--purple); min-width: 450px; }
+
+    h1, h2 { font-family: "Kavoon", serif; color: white; }
+    h3, h4, a, p, small { font-family: "Inter", sans-serif; line-height: 1.5em; }
+    h1 { font-size: 3em; }
+    h2 { font-size: 2em; }
+    nav h2, h3 { font-size: 1.5em; }
+    h3 { color: var(--yellow); font-weight: bold; }
+    h4 { 
+        font-size: 1.15em; 
+        color: var(--purple); 
+        font-weight: bold;
+        margin-bottom: 0.25rem; 
+    }
+
+    aside section:nth-child(3), footer { color: white; }
+
+    /* header */
+    header h1 { 
+        background-color: var(--lavender); 
+        border-radius: 0 0 0.5em 0.5em; 
+        padding: 1.25em 1em 1em 1em;
+    }
+    header h1, header p { text-align: center; }
+    header p { 
+        background-color: var(--pink); 
+        color: white; 
+        font-weight: 500;
+        font-style: italic;
+        border-radius: 0 0 1.5em 1.5em;
+
+        position: relative;
+        z-index: -99;
+        margin: 0 0.5em 2em 0.5em;
+        bottom: 1em;
+
+        padding-top: 2em;
+    }
+
+    nav h2 {
+        width: fit-content;
+        background-color: var(--yellow);
+        padding: 0.75em;
+        border-radius: 0 0 0.5em 0.5em;
+
+        font-family:  "Inter", sans-serif;
+        color: black;
+        font-weight: bold;
+        font-style: italic;
+        text-transform: uppercase;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    /* this is assuming that the menu button (nav h2) is meant to be hidden on default on small screens. 
+    i'd imagine that there'd be js added so the user could toggle the button to display the menu. */
+    nav ul { display: none; } 
+
+    /* main */
+    main section { margin: 1.5em 1em; }
+    article { 
+        background-color: white; 
+        border-radius: 0.75em;
+        margin: 1em 0.5em;
+        padding: 1.5em;
+    }
+
+    /* aside */
+    aside section:nth-child(odd) { background-color: var(--pink); }
+    aside section { padding: 1em; }
+
+    aside ul { 
+        width: 100%; 
+        margin-top: 0.75em; 
+    }
+
+    aside ul li { 
+        font-family: "Inter", sans-serif;
+        font-size: 1.25em;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+
+        display: inline-block;
+        padding: 1em;
+        padding-top: 1.5em;
+        margin: 0.33em;
+        width: 150px;
+        height: 50px;
+        background-color: white;
+        border-radius: 0.5em;
+        vertical-align: middle;
+    }
+
+    aside ul li:nth-child(1) { background-color: var(--teal); }
+    aside ul li:nth-child(2) { background-color: var(--lavender); }
+    aside ul li:nth-child(3) { background-color: var(--yellow); }
+
+    aside section:nth-child(3) a { 
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center; 
+        
+        display: block;
+        margin: 0 5% 0 5%;
+        padding: 1.25em;
+        border-radius: 1em;
+        box-shadow: 0.25em 0.25em 0.25em black;
+        transition: 0.3s ease-in-out;
+    }
+    
+    aside section:nth-child(3) a:hover { background-color: var(--yellow); } 
+    aside section:nth-child(3) p { margin: 0.5em 0; }
+
+    /* table */
+    table { 
+        margin: 0 20% 0 20%;
+        table-layout: fixed;
+        font-family: "Inter", sans-serif; 
+        color: black; 
+    }
+    table, th, td { border: 2px solid var(--yellow); }
+    table * { padding: 1em; }
+    thead { 
+        background-color: var(--yellow);
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center; 
+    }
+
+    thead th:nth-child(2) { width: 20%; }
+
+    tbody { background-color: white; text-align: left; }
+
+    /* footer */
+    footer { 
+        background-color: var(--lavender);
+        padding: 2em;
+        border-radius: 0 0 2em 2em;
+        margin-bottom: 4em; 
+
+        text-align: center;
+        font-size: 0.75em;
+        font-weight: 500;
+    }
+    footer > * { display: inline-block; margin: 2em; }
+    footer a { color: white; }
+
+    /* extra unnecessary styles */
+    a { transition: 0.3s ease-in-out; }
+    a:hover { color: var(--yellow); }
+    aside section:nth-child(3) a:hover { background-color: var(--yellow); }
+    nav h2 { cursor: pointer; }
