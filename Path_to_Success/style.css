@@ -65,7 +65,11 @@ table {
 }
 
 /* global styles (mobile/small) */
-    body { background-color: var(--purple); min-width: 450px; }
+    body { 
+        background-color: var(--purple); 
+        width: 450px;
+        margin: 0 auto; 
+    }
 
     h1, h2 { font-family: "Kavoon", serif; color: white; }
     h3, h4, a, p, small { font-family: "Inter", sans-serif; line-height: 1.5em; }
@@ -104,6 +108,9 @@ table {
         padding-top: 2em;
     }
 
+    /* last thing i need to fix */
+    nav { position: fixed; top: 0; right: 0;  }
+
     nav h2 {
         width: fit-content;
         background-color: var(--yellow);
@@ -115,15 +122,9 @@ table {
         font-weight: bold;
         font-style: italic;
         text-transform: uppercase;
-
-        position: fixed;
-        top: 0;
-        right: 0;
     }
 
-    /* this is assuming that the menu button (nav h2) is meant to be hidden on default on small screens. 
-    i'd imagine that there'd be js added so the user could toggle the button to display the menu. */
-    nav ul { display: none; } 
+    nav ul { visibility: hidden; height: 1px; opacity: 0%; } 
 
     /* main */
     main section { margin: 1.5em 1em; }
