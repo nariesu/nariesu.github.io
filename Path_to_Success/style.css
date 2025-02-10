@@ -87,6 +87,7 @@ table {
     aside section:nth-child(3), footer { color: white; }
 
     /* header */
+    header { position: relative; }
     header h1 { 
         background-color: var(--lavender); 
         border-radius: 0 0 0.5em 0.5em; 
@@ -108,8 +109,7 @@ table {
         padding-top: 2em;
     }
 
-    /* last thing i need to fix */
-    nav { position: fixed; top: 0; right: 0;  }
+    nav { position: absolute; top: 0; right: -4em;  }
 
     nav h2 {
         width: fit-content;
