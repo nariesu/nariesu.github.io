@@ -36,16 +36,16 @@
 /* transform state animations */
 @keyframes transformStateFace1 {
     0% {
-        background-image: url(prison_realm/images/emptyCubeface1_frames/emptyCubeface_eb.png);
+        background-image: url(images/emptyCubeface1_frames/emptyCubeface_eb.png);
     }
     14% {
-        background-image: url(prison_realm/images/emptyCubeface1_frames/emptyCubeface_eb.png);
+        background-image: url(images/emptyCubeface1_frames/emptyCubeface_eb.png);
     }
     15% {
-        background-image: url(prison_realm/images/emptyCubeface1_frames/emptyCubeface_ec.png);
+        background-image: url(images/emptyCubeface1_frames/emptyCubeface_ec.png);
     }
     100% {
-        background-image: url(prison_realm/images/emptyCubeface1_frames/emptyCubeface_ec.png);
+        background-image: url(images/emptyCubeface1_frames/emptyCubeface_ec.png);
         display: none;
         visibility: hidden;
     }
@@ -53,19 +53,19 @@
 
 @keyframes transformStateFace2 {
     0% {
-        background-image: url(prison_realm/images/emptyCubeface2_frames/emptyCubeface2_eb.png);
+        background-image: url(images/emptyCubeface2_frames/emptyCubeface2_eb.png);
     }
     14% {
-        background-image: url(prison_realm/images/emptyCubeface2_frames/emptyCubeface2_eb.png);
+        background-image: url(images/emptyCubeface2_frames/emptyCubeface2_eb.png);
     }
     15% {
-        background-image: url(prison_realm/images/emptyCubeface2_frames/emptyCubeface2_ec.png);
+        background-image: url(images/emptyCubeface2_frames/emptyCubeface2_ec.png);
     }
     55% {
         opacity: 1;
     }
     100% {
-        background-image: url(prison_realm/images/emptyCubeface2_frames/emptyCubeface2_ec.png);
+        background-image: url(images/emptyCubeface2_frames/emptyCubeface2_ec.png);
         opacity: 0;
         display: none;
         visibility: hidden;
@@ -74,16 +74,16 @@
 
 @keyframes transformStateFace3 {
     0% {
-        background-image: url(prison_realm/images/emptyCubeface3_frames/emptyCubeface3_eb.png);
+        background-image: url(images/emptyCubeface3_frames/emptyCubeface3_eb.png);
     }
     14% {
-        background-image: url(prison_realm/images/emptyCubeface3_frames/emptyCubeface3_eb.png);
+        background-image: url(images/emptyCubeface3_frames/emptyCubeface3_eb.png);
     }
     15% {
-        background-image: url(prison_realm/images/emptyCubeface3_frames/emptyCubeface3_ec.png);
+        background-image: url(images/emptyCubeface3_frames/emptyCubeface3_ec.png);
     }
     100% {
-        background-image: url(prison_realm/images/emptyCubeface3_frames/emptyCubeface3_ec.png);
+        background-image: url(images/emptyCubeface3_frames/emptyCubeface3_ec.png);
         display: none;
         visibility: hidden;
     }
@@ -91,16 +91,16 @@
 
 @keyframes transformStateFace4 {
     0% {
-        background-image: url(prison_realm/images/emptyCubeface4_frames/emptyCubeface4_eb.png);
+        background-image: url(images/emptyCubeface4_frames/emptyCubeface4_eb.png);
     }
     14% {
-        background-image: url(prison_realm/images/emptyCubeface4_frames/emptyCubeface4_eb.png);
+        background-image: url(images/emptyCubeface4_frames/emptyCubeface4_eb.png);
     }
     15% {
-        background-image: url(prison_realm/images/emptyCubeface4_frames/emptyCubeface4_ec.png);
+        background-image: url(images/emptyCubeface4_frames/emptyCubeface4_ec.png);
     }
     100% {
-        background-image: url(prison_realm/images/emptyCubeface4_frames/emptyCubeface4_ec.png);
+        background-image: url(images/emptyCubeface4_frames/emptyCubeface4_ec.png);
         display: none;
         visibility: hidden;
     }
@@ -108,16 +108,16 @@
 
 @keyframes transformStateFace5 {
     0% {
-        background-image: url(prison_realm/images/emptyCubeface5_frames/emptyCubeface5_eb.png);
+        background-image: url(images/emptyCubeface5_frames/emptyCubeface5_eb.png);
     }
     14% {
-        background-image: url(prison_realm/images/emptyCubeface5_frames/emptyCubeface5_eb.png);
+        background-image: url(images/emptyCubeface5_frames/emptyCubeface5_eb.png);
     }
     15% {
-        background-image: url(prison_realm/images/emptyCubeface5_frames/emptyCubeface5_ec.png);
+        background-image: url(images/emptyCubeface5_frames/emptyCubeface5_ec.png);
     }
     100% {
-        background-image: url(prison_realm/images/emptyCubeface5_frames/emptyCubeface5_ec.png);
+        background-image: url(images/emptyCubeface5_frames/emptyCubeface5_ec.png);
         display: none;
         visibility: hidden;
     }
@@ -125,16 +125,16 @@
 
 @keyframes transformStateFace6 {
     0% {
-        background-image: url(prison_realm/images/emptyCubeface6_frames/emptyCubeface6_eb.png);
+        background-image: url(images/emptyCubeface6_frames/emptyCubeface6_eb.png);
     }
     14% {
-        background-image: url(prison_realm/images/emptyCubeface6_frames/emptyCubeface6_eb.png);
+        background-image: url(images/emptyCubeface6_frames/emptyCubeface6_eb.png);
     }
     15% {
-        background-image: url(prison_realm/images/emptyCubeface6_frames/emptyCubeface6_ec.png);
+        background-image: url(images/emptyCubeface6_frames/emptyCubeface6_ec.png);
     }
     100% {
-        background-image: url(prison_realm/images/emptyCubeface6_frames/emptyCubeface6_ec.png);
+        background-image: url(images/emptyCubeface6_frames/emptyCubeface6_ec.png);
         display: none;
         visibility: hidden;
     }
@@ -174,7 +174,7 @@
 
 #openState.transformState {
     display: block;
-    background-image: url(prison_realm/images/openStateImg.png);
+    background-image: url(images/openStateImg.png);
     background-color: var(--emptyBG);
 }
 
@@ -323,7 +323,7 @@ body.closedState {
 /* closedState animations */
 #cubeFace1.closedState .backgroundImgLayer {
     opacity: 0;
-    background-image: url(prison_realm/images/closedCubeface1_frames/closedCubeface1_ec.png);
+    background-image: url(images/closedCubeface1_frames/closedCubeface1_ec.png);
     animation: makeEyesVisible 1.5s linear forwards !important;
     animation-delay: 1.25s !important;
 }
@@ -339,7 +339,7 @@ body.closedState {
 
 #cubeFace2.closedState .backgroundImgLayer {
     opacity: 0;
-    background-image: url(prison_realm/images/closedCubeface2_frames/closedCubeface2_ec.png);
+    background-image: url(images/closedCubeface2_frames/closedCubeface2_ec.png);
     animation: makeEyesVisible 1.5s linear forwards !important;
     animation-delay: 1.25s !important;
 }
@@ -351,7 +351,7 @@ body.closedState {
 
 #cubeFace3.closedState .backgroundImgLayer {
     opacity: 0;
-    background-image: url(prison_realm/images/closedCubeface3_frames/closedCubeface3_ec.png);
+    background-image: url(images/closedCubeface3_frames/closedCubeface3_ec.png);
     animation: makeEyesVisible 1.5s linear forwards !important;
     animation-delay: 1.25s !important;
 }
@@ -363,7 +363,7 @@ body.closedState {
 
 #cubeFace4.closedState .backgroundImgLayer {
     opacity: 0;
-    background-image: url(prison_realm/images/closedCubeface4_frames/closedCubeface4_ec.png);
+    background-image: url(images/closedCubeface4_frames/closedCubeface4_ec.png);
     animation: makeEyesVisible 1.5s linear forwards !important;
     animation-delay: 1.25s !important;
 }
@@ -375,7 +375,7 @@ body.closedState {
 
 #cubeFace5.closedState .backgroundImgLayer {
     opacity: 0;
-    background-image: url(prison_realm/images/closedCubeface5_frames/closedCubeface5_ec.png);
+    background-image: url(images/closedCubeface5_frames/closedCubeface5_ec.png);
     animation: makeEyesVisible 1.5s linear forwards !important;
     animation-delay: 1.25s !important;
 }
@@ -387,7 +387,7 @@ body.closedState {
 
 #cubeFace6.closedState .backgroundImgLayer {
     opacity: 0;
-    background-image: url(prison_realm/images/closedCubeface6_frames/closedCubeface6_ec.png);
+    background-image: url(images/closedCubeface6_frames/closedCubeface6_ec.png);
     animation: makeEyesVisible 1.5s linear forwards !important;
     animation-delay: 1.25s !important;
 }
@@ -509,16 +509,16 @@ body.gojoState {
 
 @keyframes gojoStateFace2 {
     0% {
-        background-image: url(prison_realm/images/closedCubeface2_frames/closedCubeface2_eb.png);
+        background-image: url(images/closedCubeface2_frames/closedCubeface2_eb.png);
     }
     1% {
-        background-image: url(prison_realm/images/closedCubeface2_frames/closedCubeface2_eb.png);
+        background-image: url(images/closedCubeface2_frames/closedCubeface2_eb.png);
     }
     2% {
-        background-image: url(prison_realm/images/closedCubeface2_frames/closedCubeface2_eo.png);
+        background-image: url(images/closedCubeface2_frames/closedCubeface2_eo.png);
     }
     49% {
-        background-image: url(prison_realm/images/closedCubeface2_frames/closedCubeface2_eo.png);
+        background-image: url(images/closedCubeface2_frames/closedCubeface2_eo.png);
     }
     50% {
         background-image: none;
@@ -533,16 +533,16 @@ body.gojoState {
 
 @keyframes gojoStateFace3 {
     0% {
-        background-image: url(prison_realm/images/closedCubeface3_frames/closedCubeface3_eb.png);
+        background-image: url(images/closedCubeface3_frames/closedCubeface3_eb.png);
     }
     1% {
-        background-image: url(prison_realm/images/closedCubeface3_frames/closedCubeface3_eb.png);
+        background-image: url(images/closedCubeface3_frames/closedCubeface3_eb.png);
     }
     2% {
-        background-image: url(prison_realm/images/closedCubeface3_frames/closedCubeface3_eo.png);
+        background-image: url(images/closedCubeface3_frames/closedCubeface3_eo.png);
     }
     49% {
-        background-image: url(prison_realm/images/closedCubeface3_frames/closedCubeface3_eo.png);
+        background-image: url(images/closedCubeface3_frames/closedCubeface3_eo.png);
     }
     50% {
         background-image: none;
@@ -557,16 +557,16 @@ body.gojoState {
 
 @keyframes gojoStateFace6 {
     0% {
-        background-image: url(prison_realm/images/closedCubeface6_frames/closedCubeface6_eb.png);
+        background-image: url(images/closedCubeface6_frames/closedCubeface6_eb.png);
     }
     1% {
-        background-image: url(prison_realm/images/closedCubeface6_frames/closedCubeface6_eb.png);
+        background-image: url(images/closedCubeface6_frames/closedCubeface6_eb.png);
     }
     2% {
-        background-image: url(prison_realm/images/closedCubeface6_frames/closedCubeface6_eo.png);
+        background-image: url(images/closedCubeface6_frames/closedCubeface6_eo.png);
     }
     49% {
-        background-image: url(prison_realm/images/closedCubeface6_frames/closedCubeface6_eo.png);
+        background-image: url(images/closedCubeface6_frames/closedCubeface6_eo.png);
     }
     50% {
         background-image: none;
@@ -581,15 +581,15 @@ body.gojoState {
 
 /* visble faces: moving */
 #cubeFace1.gojoStateAnimate .backgroundImgLayer {
-    background-image: url(prison_realm/images/gojoCubeFace1_Animation.webp) !important;
+    background-image: url(images/gojoCubeFace1_Animation.webp) !important;
 }
 
 #cubeFace4.gojoStateAnimate .backgroundImgLayer {
-    background-image: url(prison_realm/images/gojoCubeFace4_Animation.webp) !important;
+    background-image: url(images/gojoCubeFace4_Animation.webp) !important;
 }
 
 #cubeFace5.gojoStateAnimate .backgroundImgLayer {
-    background-image: url(prison_realm/images/gojoCubeFace5_Animation.webp) !important;
+    background-image: url(images/gojoCubeFace5_Animation.webp) !important;
 }
 
 /* visible faces: blinking */
@@ -613,65 +613,65 @@ body.gojoState {
 
 @keyframes gojoStateFace1 {
     0% {
-        background-image: url(prison_realm/images/closedCubeface1_frames/closedCubeface1_eo.png);
+        background-image: url(images/closedCubeface1_frames/closedCubeface1_eo.png);
     }
     94% {
-        background-image: url(prison_realm/images/closedCubeface1_frames/closedCubeface1_eo.png);
+        background-image: url(images/closedCubeface1_frames/closedCubeface1_eo.png);
     }
     95% {
-        background-image: url(prison_realm/images/closedCubeface1_frames/closedCubeface1_eb.png);
+        background-image: url(images/closedCubeface1_frames/closedCubeface1_eb.png);
     }
     97% {
-        background-image: url(prison_realm/images/closedCubeface1_frames/closedCubeface1_ec.png);
+        background-image: url(images/closedCubeface1_frames/closedCubeface1_ec.png);
     }
     98% {
-        background-image: url(prison_realm/images/closedCubeface1_frames/closedCubeface1_eb.png);
+        background-image: url(images/closedCubeface1_frames/closedCubeface1_eb.png);
     }
     100% {
-        background-image: url(prison_realm/images/closedCubeface1_frames/closedCubeface1_eo.png);
+        background-image: url(images/closedCubeface1_frames/closedCubeface1_eo.png);
     }
 }
 
 @keyframes gojoStateFace4 {
     0% {
-        background-image: url(prison_realm/images/closedCubeface4_frames/closedCubeface4_eo.png);
+        background-image: url(images/closedCubeface4_frames/closedCubeface4_eo.png);
     }
     94% {
-        background-image: url(prison_realm/images/closedCubeface4_frames/closedCubeface4_eo.png);
+        background-image: url(images/closedCubeface4_frames/closedCubeface4_eo.png);
     }
     95% {
-        background-image: url(prison_realm/images/closedCubeface4_frames/closedCubeface4_eb.png);
+        background-image: url(images/closedCubeface4_frames/closedCubeface4_eb.png);
     }
     97% {
-        background-image: url(prison_realm/images/closedCubeface4_frames/closedCubeface4_ec.png);
+        background-image: url(images/closedCubeface4_frames/closedCubeface4_ec.png);
     }
     98% {
-        background-image: url(prison_realm/images/closedCubeface4_frames/closedCubeface4_eb.png);
+        background-image: url(images/closedCubeface4_frames/closedCubeface4_eb.png);
     }
     100% {
-        background-image: url(prison_realm/images/closedCubeface4_frames/closedCubeface4_eo.png);
+        background-image: url(images/closedCubeface4_frames/closedCubeface4_eo.png);
     }
 }
 
 
 @keyframes gojoStateFace5 {
     0% {
-        background-image: url(prison_realm/images/closedCubeface5_frames/closedCubeface5_eo.png);
+        background-image: url(images/closedCubeface5_frames/closedCubeface5_eo.png);
     }
     94% {
-        background-image: url(prison_realm/images/closedCubeface5_frames/closedCubeface5_eo.png);
+        background-image: url(images/closedCubeface5_frames/closedCubeface5_eo.png);
     }
     95% {
-        background-image: url(prison_realm/images/closedCubeface5_frames/closedCubeface5_eb.png);
+        background-image: url(images/closedCubeface5_frames/closedCubeface5_eb.png);
     }
     97% {
-        background-image: url(prison_realm/images/closedCubeface5_frames/closedCubeface5_ec.png);
+        background-image: url(images/closedCubeface5_frames/closedCubeface5_ec.png);
     }
     98% {
-        background-image: url(prison_realm/images/closedCubeface5_frames/closedCubeface5_eb.png);
+        background-image: url(images/closedCubeface5_frames/closedCubeface5_eb.png);
     }
     100% {
-        background-image: url(prison_realm/images/closedCubeface5_frames/closedCubeface5_eo.png);
+        background-image: url(images/closedCubeface5_frames/closedCubeface5_eo.png);
     }
 }
 
