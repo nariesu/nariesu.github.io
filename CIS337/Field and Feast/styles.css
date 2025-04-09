@@ -63,28 +63,45 @@ table {
 body {
     min-width: 300px;
 	font-family: 'Playfair Display', serif;
+	background-color: var(--soft-white);
 }
 
 h1 {
-	font-size: 3.5em;
+	font-size: 3em;
 	font-weight: bold;
 	text-align: center;
 }
 
 h2 {
 	font-size: 2em;
+	color: var(--midnight-blue);
 }
 
-h3 {
-	font-size: 1em;
+h3, nav ul li {
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 a {
 	text-decoration: none;
 }
 
-header div, nav, main, section, aside, footer {
-	padding: 1em 2em;
+p, ul, figcaption, footer {
+	color: var(--dark-charcoal);
+	font-size: 1em;
+	line-height: 1.33em;
+}
+
+p {
+	padding: 1em 0 1em 0;
+}
+
+header div, nav, main, aside, footer {
+	padding: 1em;
+}
+
+section {
+	padding: 1em 0 1em 0;
 }
 
 /* header */ 
@@ -93,11 +110,16 @@ header, footer {
 	color: var(--soft-white);
 }
 
+header img {
+	width: 75%;
+}
+
 header h2 {
 	font-style: italic;
 	font-size: 1.5em;
 	font-weight: bold;
 	text-align: center;
+	color: var(--soft-white);
 }
 
 header div, footer {
@@ -121,9 +143,72 @@ nav ul {
 
 nav ul a {
 	color: var(--midnight-blue);
-	text-decoration: none;
-	font-size: 1.5em;
+}
+
+nav ul a:hover, footer a:hover {
+	filter: brightness(200%);
+	transition: 0.75s;
+}
+
+/* main */
+main h2, aside h2 {
+	padding: 0.5em 0 0.5em 0;
+}
+
+section, aside {
+	border-bottom: 2px solid var(--champagne-gold);
+}
+
+main ul li, main ul p, aside a {
+	background-color: var(--olive-green);
+	color: var(--linen)
+}
+
+main ul li, figure {
+	margin: 0.5em 0 0.5em 0;
+}
+
+main ul li {
+	padding: 1em;
+	border-radius: 0.33em;
+}
+
+main ul li ul li {
+	list-style-type: disc;
+	list-style-position: inside;
+	padding: 0;
+	margin: 0 0 0 1em;
+}
+
+/* aside */
+aside div {
+	display: grid;
+}
+
+figure img {
+	width: 100%;
+	border-radius: 0.33em;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+figcaption {
+	padding: 0.5em;
+	text-align: center;
+	font-style: italic;
+	box-shadow: 0em 0em 0.25em var(--dark-charcoal);
+	border-radius: 0.33em;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+
+aside a {
+	display: block;
+	text-align: center;
 	font-weight: bold;
+	border-radius: 0.33em;
+	padding: 1em;
+	margin: 1em 0 1em 0;
 }
 
 /* footer */
@@ -131,10 +216,15 @@ footer {
 	text-align: center;
 }
 
-/* main */
-section, aside {
-	border-bottom: 2px solid var(--champagne-gold);
+footer p {
+	color: var(--soft-white);
 }
+
+footer a {
+	color: var(--champagne-gold);
+	font-weight: bold;
+}
+
 /* MEDIA QUERY MEDIUM */
 @media screen and (min-width: 600px) {
 
