@@ -18,8 +18,8 @@
 body {
     background-color: var(--emptyBG);
     color: white;
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     position: relative;
     overflow: hidden;
     font-size: 1em;
@@ -39,8 +39,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
 }
 
 footer {
@@ -62,7 +62,7 @@ header {
     z-index: 20;
     font-size: 0.9em;
 
-    width: 100vw;
+    width: 100dvw;
     padding: 1em 0 1em 0;
     filter: brightness(100%);
 }
@@ -233,7 +233,7 @@ header input[type="radio"] {
     transform: translate(-50%, -50%);
     width: 75vmin;
     aspect-ratio: 1;
-    z-index: 99;
+    z-index: 9999 !important;
 
     background-color: white;
     color: black;
@@ -376,9 +376,10 @@ header input[type="radio"] {
     aspect-ratio: 1;
 }
 
-/* might get rid of idk */
-.darkenUi {
-    filter: brightness(0%);
+.darkenUi h2,
+.darkenUi #headerButtons,
+.darkenUi #controlState label input[type="radio"]:checked~.svgContainer {
+    filter: drop-shadow(0 0 0.5em black);
     transition: 0.5s;
     transition-delay: 0.5s;
 }
@@ -425,7 +426,7 @@ header input[type="radio"] {
     position: relative;
     overflow: hidden;
     width: 50%;
-    padding-top: 28.125%; 
+    padding-top: 28.125%;
 }
 
 .responsiveiFrame {
@@ -536,158 +537,158 @@ header input[type="radio"] {
 /* empty state animation */
 @keyframes emptyStateFace1 {
     0% {
-        background-image: url(images/emptyCubeface1_frames/emptyCubeface_ec.png);
+        background-image: url(/images/emptyCubeface1_frames/emptyCubeface_ec.png);
     }
 
     2% {
-        background-image: url(images/emptyCubeface1_frames/emptyCubeface_eb.png);
+        background-image: url(/images/emptyCubeface1_frames/emptyCubeface_eb.png);
     }
 
     3% {
-        background-image: url(images/emptyCubeface1_frames/emptyCubeface_eo.png);
+        background-image: url(/images/emptyCubeface1_frames/emptyCubeface_eo.png);
     }
 
     97% {
-        background-image: url(images/emptyCubeface1_frames/emptyCubeface_eo.png);
+        background-image: url(/images/emptyCubeface1_frames/emptyCubeface_eo.png);
     }
 
     98% {
-        background-image: url(images/emptyCubeface1_frames/emptyCubeface_eb.png);
+        background-image: url(/images/emptyCubeface1_frames/emptyCubeface_eb.png);
     }
 
     100% {
-        background-image: url(images/emptyCubeface1_frames/emptyCubeface_ec.png);
+        background-image: url(/images/emptyCubeface1_frames/emptyCubeface_ec.png);
     }
 }
 
 @keyframes emptyStateFace2 {
     0% {
-        background-image: url(images/emptyCubeface2_frames/emptyCubeface2_ec.png);
+        background-image: url(/images/emptyCubeface2_frames/emptyCubeface2_ec.png);
     }
 
     2% {
-        background-image: url(images/emptyCubeface2_frames/emptyCubeface2_eb.png);
+        background-image: url(/images/emptyCubeface2_frames/emptyCubeface2_eb.png);
     }
 
     3% {
-        background-image: url(images/emptyCubeface2_frames/emptyCubeface2_eo.png);
+        background-image: url(/images/emptyCubeface2_frames/emptyCubeface2_eo.png);
     }
 
     97% {
-        background-image: url(images/emptyCubeface2_frames/emptyCubeface2_eo.png);
+        background-image: url(/images/emptyCubeface2_frames/emptyCubeface2_eo.png);
     }
 
     98% {
-        background-image: url(images/emptyCubeface2_frames/emptyCubeface2_eb.png);
+        background-image: url(/images/emptyCubeface2_frames/emptyCubeface2_eb.png);
     }
 
     100% {
-        background-image: url(images/emptyCubeface2_frames/emptyCubeface2_ec.png);
+        background-image: url(/images/emptyCubeface2_frames/emptyCubeface2_ec.png);
     }
 }
 
 
 @keyframes emptyStateFace3 {
     0% {
-        background-image: url(images/emptyCubeface3_frames/emptyCubeface3_ec.png);
+        background-image: url(/images/emptyCubeface3_frames/emptyCubeface3_ec.png);
     }
 
     2% {
-        background-image: url(images/emptyCubeface3_frames/emptyCubeface3_eb.png);
+        background-image: url(/images/emptyCubeface3_frames/emptyCubeface3_eb.png);
     }
 
     3% {
-        background-image: url(images/emptyCubeface3_frames/emptyCubeface3_eo.png);
+        background-image: url(/images/emptyCubeface3_frames/emptyCubeface3_eo.png);
     }
 
     97% {
-        background-image: url(images/emptyCubeface3_frames/emptyCubeface3_eo.png);
+        background-image: url(/images/emptyCubeface3_frames/emptyCubeface3_eo.png);
     }
 
     98% {
-        background-image: url(images/emptyCubeface3_frames/emptyCubeface3_eb.png);
+        background-image: url(/images/emptyCubeface3_frames/emptyCubeface3_eb.png);
     }
 
     100% {
-        background-image: url(images/emptyCubeface3_frames/emptyCubeface3_ec.png);
+        background-image: url(/images/emptyCubeface3_frames/emptyCubeface3_ec.png);
     }
 }
 
 @keyframes emptyStateFace4 {
     0% {
-        background-image: url(images/emptyCubeface4_frames/emptyCubeface4_ec.png);
+        background-image: url(/images/emptyCubeface4_frames/emptyCubeface4_ec.png);
     }
 
     2% {
-        background-image: url(images/emptyCubeface4_frames/emptyCubeface4_eb.png);
+        background-image: url(/images/emptyCubeface4_frames/emptyCubeface4_eb.png);
     }
 
     3% {
-        background-image: url(images/emptyCubeface4_frames/emptyCubeface4_eo.png);
+        background-image: url(/images/emptyCubeface4_frames/emptyCubeface4_eo.png);
     }
 
     97% {
-        background-image: url(images/emptyCubeface4_frames/emptyCubeface4_eo.png);
+        background-image: url(/images/emptyCubeface4_frames/emptyCubeface4_eo.png);
     }
 
     98% {
-        background-image: url(images/emptyCubeface4_frames/emptyCubeface4_eb.png);
+        background-image: url(/images/emptyCubeface4_frames/emptyCubeface4_eb.png);
     }
 
     100% {
-        background-image: url(images/emptyCubeface4_frames/emptyCubeface4_ec.png);
+        background-image: url(/images/emptyCubeface4_frames/emptyCubeface4_ec.png);
     }
 }
 
 @keyframes emptyStateFace5 {
     0% {
-        background-image: url(images/emptyCubeface5_frames/emptyCubeface5_ec.png);
+        background-image: url(/images/emptyCubeface5_frames/emptyCubeface5_ec.png);
     }
 
     2% {
-        background-image: url(images/emptyCubeface5_frames/emptyCubeface5_eb.png);
+        background-image: url(/images/emptyCubeface5_frames/emptyCubeface5_eb.png);
     }
 
     3% {
-        background-image: url(images/emptyCubeface5_frames/emptyCubeface5_eo.png);
+        background-image: url(/images/emptyCubeface5_frames/emptyCubeface5_eo.png);
     }
 
     97% {
-        background-image: url(images/emptyCubeface5_frames/emptyCubeface5_eo.png);
+        background-image: url(/images/emptyCubeface5_frames/emptyCubeface5_eo.png);
     }
 
     98% {
-        background-image: url(images/emptyCubeface5_frames/emptyCubeface5_eb.png);
+        background-image: url(/images/emptyCubeface5_frames/emptyCubeface5_eb.png);
     }
 
     100% {
-        background-image: url(images/emptyCubeface5_frames/emptyCubeface5_ec.png);
+        background-image: url(/images/emptyCubeface5_frames/emptyCubeface5_ec.png);
     }
 }
 
 @keyframes emptyStateFace6 {
     0% {
-        background-image: url(images/emptyCubeface6_frames/emptyCubeface6_ec.png);
+        background-image: url(/images/emptyCubeface6_frames/emptyCubeface6_ec.png);
     }
 
     2% {
-        background-image: url(images/emptyCubeface6_frames/emptyCubeface6_eb.png);
+        background-image: url(/images/emptyCubeface6_frames/emptyCubeface6_eb.png);
     }
 
     3% {
-        background-image: url(images/emptyCubeface6_frames/emptyCubeface6_eo.png);
+        background-image: url(/images/emptyCubeface6_frames/emptyCubeface6_eo.png);
     }
 
     97% {
-        background-image: url(images/emptyCubeface6_frames/emptyCubeface6_eo.png);
+        background-image: url(/images/emptyCubeface6_frames/emptyCubeface6_eo.png);
     }
 
     98% {
-        background-image: url(images/emptyCubeface6_frames/emptyCubeface6_eb.png);
+        background-image: url(/images/emptyCubeface6_frames/emptyCubeface6_eb.png);
     }
 
     100% {
-        background-image: url(images/emptyCubeface6_frames/emptyCubeface6_ec.png);
+        background-image: url(/images/emptyCubeface6_frames/emptyCubeface6_ec.png);
     }
 }
 

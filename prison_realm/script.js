@@ -110,73 +110,85 @@ document.addEventListener('DOMContentLoaded', function () {
     gojoToggle.addEventListener('change', function () {
         if (prisonRealm.classList.contains('closedState')) {
             blindfoldedIdiot.classList.add('transformState');
-
+    
             gojoTimeoutId = setTimeout(() => {
                 prisonRealm.classList.add('gojoState');
                 prisonRealmContainer.classList.add('gojoState');
                 cubeFaces.forEach(face => face.classList.add('gojoState'));
                 document.body.classList.add('gojoState');
-
+                document.querySelector("header").classList.add('darkenUi');
+    
                 // Select specific cube faces
                 const targetFaces = ['#cubeFace1', '#cubeFace4', '#cubeFace5'];
                 targetFaces.forEach(selector => {
                     const face = document.querySelector(selector);
-                    if (face) {
+                    const backgroundImgLayer = face ? face.querySelector('.backgroundImgLayer') : null; // Find the .backgroundImgLayer child element
+    
+                    if (backgroundImgLayer) {
+                        // Apply background images to .backgroundImgLayer child elements
                         if (selector === '#cubeFace1') {
-                            face.style.backgroundImage = 'url(https://nariesu.com/prison_realm/images/gojoCubeFace1_Animation.webp)';
+                            backgroundImgLayer.style.backgroundImage = 'url(images/gojoCubeFace1_Animation.webp)';
                         } else if (selector === '#cubeFace4') {
-                            face.style.backgroundImage = 'url(https://nariesu.com/prison_realm/images/gojoCubeFace4_Animation.webp)';
+                            backgroundImgLayer.style.backgroundImage = 'url(images/gojoCubeFace4_Animation.webp)';
                         } else if (selector === '#cubeFace5') {
-                            face.style.backgroundImage = 'url(https://nariesu.com/prison_realm/images/gojoCubeFace5_Animation.webp)';
+                            backgroundImgLayer.style.backgroundImage = 'url(images/gojoCubeFace5_Animation.webp)';
                         }
+    
                         void face.offsetWidth; // Force reflow
-                        face.classList.add('gojoStateAnimate');
+                        backgroundImgLayer.classList.add('gojoStateAnimate');
                     }
                 });
-
+    
                 setTimeout(() => {
                     targetFaces.forEach(selector => {
                         const face = document.querySelector(selector);
-                        if (face) face.classList.remove('gojoStateAnimate');
+                        const backgroundImgLayer = face ? face.querySelector('.backgroundImgLayer') : null; // Find the .backgroundImgLayer child element
+                        if (backgroundImgLayer) backgroundImgLayer.classList.remove('gojoStateAnimate');
                     });
                 }, 3500);
-
+    
                 controlAngleControls();
             }, 15000);
         } else {
             toggleTransform();
             blindfoldedIdiot.classList.add('gojoState');
-
+    
             gojoTimeoutId = setTimeout(() => {
                 prisonRealm.classList.add('gojoState');
                 prisonRealmContainer.classList.add('gojoState');
                 cubeFaces.forEach(face => face.classList.add('gojoState'));
                 document.body.classList.add('gojoState');
-
+                document.querySelector("header").classList.add('darkenUi');
+    
                 // Select specific cube faces
                 const targetFaces = ['#cubeFace1', '#cubeFace4', '#cubeFace5'];
                 targetFaces.forEach(selector => {
                     const face = document.querySelector(selector);
-                    if (face) {
+                    const backgroundImgLayer = face ? face.querySelector('.backgroundImgLayer') : null; // Find the .backgroundImgLayer child element
+    
+                    if (backgroundImgLayer) {
+                        // Apply background images to .backgroundImgLayer child elements
                         if (selector === '#cubeFace1') {
-                            face.style.backgroundImage = 'url(https://nariesu.com/prison_realm/images/gojoCubeFace1_Animation.webp)';
+                            backgroundImgLayer.style.backgroundImage = 'url(images/gojoCubeFace1_Animation.webp)';
                         } else if (selector === '#cubeFace4') {
-                            face.style.backgroundImage = 'url(https://nariesu.com/prison_realm/images/gojoCubeFace4_Animation.webp)';
+                            backgroundImgLayer.style.backgroundImage = 'url(images/gojoCubeFace4_Animation.webp)';
                         } else if (selector === '#cubeFace5') {
-                            face.style.backgroundImage = 'url(https://nariesu.com/prison_realm/images/gojoCubeFace5_Animation.webp)';
+                            backgroundImgLayer.style.backgroundImage = 'url(images/gojoCubeFace5_Animation.webp)';
                         }
-                        void face.offsetWidth;
-                        face.classList.add('gojoStateAnimate');
+    
+                        void face.offsetWidth; // Force reflow
+                        backgroundImgLayer.classList.add('gojoStateAnimate');
                     }
                 });
-
+    
                 setTimeout(() => {
                     targetFaces.forEach(selector => {
                         const face = document.querySelector(selector);
-                        if (face) face.classList.remove('gojoStateAnimate');
+                        const backgroundImgLayer = face ? face.querySelector('.backgroundImgLayer') : null; // Find the .backgroundImgLayer child element
+                        if (backgroundImgLayer) backgroundImgLayer.classList.remove('gojoStateAnimate');
                     });
                 }, 3500);
-
+    
                 controlAngleControls();
             }, 15000);
         }
@@ -185,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function () {
     resetToggle.addEventListener('change', function () {
         clearTimeout(timeoutId);
         clearTimeout(gojoTimeoutId);
-
+    
         prisonRealm.classList.remove('transformState', 'closedState', 'gojoState', 'angle1', 'angle2', 'angle3', 'angle4', 'angle5', 'angle6');
         openState.classList.remove('transformState', 'closedState');
         blindfoldedIdiot.classList.remove('transformState', 'gojoState');
@@ -193,7 +205,19 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.remove('transformState', 'closedState', 'gojoState');
         document.querySelector("header").classList.remove('darkenUi');
         prisonRealmContainer.classList.remove('gojoState');
-
+    
+        const targetFaces = ['#cubeFace1', '#cubeFace4', '#cubeFace5'];
+        targetFaces.forEach(selector => {
+            const face = document.querySelector(selector);
+            const backgroundImgLayer = face ? face.querySelector('.backgroundImgLayer') : null;
+    
+            if (backgroundImgLayer) {
+                backgroundImgLayer.style.backgroundImage = '';
+    
+                backgroundImgLayer.classList.remove('gojoStateAnimate');
+            }
+        });
+    
         controlAngleControls();
     });
 });
