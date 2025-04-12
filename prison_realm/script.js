@@ -127,11 +127,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (backgroundImgLayer) {
                         // Apply background images to .backgroundImgLayer child elements
                         if (selector === '#cubeFace1') {
-                            backgroundImgLayer.style.backgroundImage = 'url(images/gojoCubeFace1_Animation.webp)';
+                            backgroundImgLayer.style.backgroundImage = 'url(https://nariesu.com/prison_realm/images/gojoCubeFace1_Animation.webp)';
                         } else if (selector === '#cubeFace4') {
-                            backgroundImgLayer.style.backgroundImage = 'url(images/gojoCubeFace4_Animation.webp)';
+                            backgroundImgLayer.style.backgroundImage = 'url(https://nariesu.com/prison_realm/images/gojoCubeFace4_Animation.webp)';
                         } else if (selector === '#cubeFace5') {
-                            backgroundImgLayer.style.backgroundImage = 'url(images/gojoCubeFace5_Animation.webp)';
+                            backgroundImgLayer.style.backgroundImage = 'url(https://nariesu.com/prison_realm/images/gojoCubeFace5_Animation.webp)';
                         }
     
                         void face.offsetWidth; // Force reflow
@@ -169,11 +169,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (backgroundImgLayer) {
                         // Apply background images to .backgroundImgLayer child elements
                         if (selector === '#cubeFace1') {
-                            backgroundImgLayer.style.backgroundImage = 'url(images/gojoCubeFace1_Animation.webp)';
+                            backgroundImgLayer.style.backgroundImage = 'url(https://nariesu.com/prison_realm/images/gojoCubeFace1_Animation.webp)';
                         } else if (selector === '#cubeFace4') {
-                            backgroundImgLayer.style.backgroundImage = 'url(images/gojoCubeFace4_Animation.webp)';
+                            backgroundImgLayer.style.backgroundImage = 'url(https://nariesu.com/prison_realm/images/gojoCubeFace4_Animation.webp)';
                         } else if (selector === '#cubeFace5') {
-                            backgroundImgLayer.style.backgroundImage = 'url(images/gojoCubeFace5_Animation.webp)';
+                            backgroundImgLayer.style.backgroundImage = 'url(https://nariesu.com/prison_realm/images/gojoCubeFace5_Animation.webp)';
                         }
     
                         void face.offsetWidth; // Force reflow
